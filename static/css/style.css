@@ -1,0 +1,164 @@
+/* Установка дефолтных свойств */
+body {
+	font-family: "Helvetica";
+	font-size: 14pt;
+	background: url("/static/img/bg.jpg");
+	background-size: 200vh;
+}
+
+/* Создание объектов, которыми будет оформляться страница */
+/* В данном случае это модный сейчас объект "карта" */
+.card {
+	box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.3);
+	border-radius: 5px;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 2vh;
+	display: block;
+}
+.content {	
+  	padding-left: 4vw;
+	padding-right: 4vw;
+  	padding-bottom: 2vh;
+  	padding-top: 2vh;
+}
+
+/* Создание более конкретизированных, но всё-равно универсальных объектов */
+/* В данном случае это шапка и её содержимое */
+#header {
+	background-color: #6bb6ff;
+}
+#header .content {
+	display: table;
+	width: 92%;		/* 100 - .content [margin-left] - .content [margin-right] */
+}
+
+#header .content .title {
+	width: 33%;		/* 100/3 */
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 10pt;
+	text-align: center;
+	font-family: "Trebuchet MS";
+}
+
+#header .content .backButton {
+	width: 33%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Trebuchet MS";
+}
+
+#header .content .backButton a {
+	text-decoration: none;
+	color: black;
+	text-decoration: none;
+}
+#header .content .backButton a:visited {
+	color: black;
+}
+
+#header .content .page {
+	width: 33%;
+	font-family: "Trebuchet MS";
+	font-style: italic;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+/* Главная страница */
+#mainPage {
+	background-color: #ffb46b;
+}
+#mainPage .content.lists ul {
+	padding-left: 0;
+}
+#mainPage .content.lists h3 {
+	float: right;
+	font-family: "Trebuchet MS";
+	font-style: italic;
+}
+#mainPage .content.lists li {
+	display: inline-block; 
+	background: #6bb6ff; 
+    margin-right: 1vm;
+    border-radius: 5px;
+}
+#mainPage .content.lists a {
+	color: black;
+	text-decoration: none;
+	margin: 0.5vw 0.5vw;
+}
+#mainPage .content.lists a:visited {
+	color: darkslategrey;
+}
+
+/* Страница с текстом */
+#fontsPage {
+	background-color: #b6ff6b; 
+}
+#fontsPage .content p {
+	text-indent: 1em;
+}
+#fontsPage .content p:nth-child(1) {
+	font-family: "Verdana";
+}
+#fontsPage .content p:nth-child(2) {
+	font-family: "Verdana";
+}
+#fontsPage .content p:nth-child(3) {
+	text-decoration: line-through;
+	text-align: center;
+}
+#fontsPage .content p:nth-child(4) {
+	font-size: 17pt;
+	font-family: "Gothic";
+}
+#fontsPage .content p:nth-child(5) {
+	font-size: 17pt;
+	font-family: "Gothic";
+}
+
+/* Страница со списками */
+#listsPage {
+	background-color: #6bffb4;
+}
+
+/* Страница с таблицей */
+#tablePage {
+	background-color: #fffe6b;
+}
+#tablePage .content table {
+	display: table;
+	margin: auto;
+	border-spacing: 0em;
+	border: 1px solid black;
+}
+#tablePage .content table *{
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+	border: 1px solid black;
+}
+#tablePage .content table tr:nth-child(2n+1) {
+	background-color: #09b26b;
+}
+
+#tablePage .content table tr:nth-child(2n) {
+	background-color: #6bb9ff;
+}
+
+/* Страница с изображением */
+#imagePage {
+	background-color: #6b6cff;
+}
+
+#imagePage .content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border-radius: 7px;
+}	
